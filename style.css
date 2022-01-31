@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Bayon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bayon&family=Public+Sans:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bayon&family=Montserrat:wght@800&family=Public+Sans:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bayon&family=Fira+Code&family=Montserrat:wght@800&family=Public+Sans:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: url("arora.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.aboutme > h2 {
+  font-family: "Fira Code";
+  text-align: center;
+  color: white;
+}
+.navbar {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+.left {
+  flex: 2;
+  cursor: pointer;
+  margin-left: 0.4rem;
+  color: white;
+  font-family: "Bayon";
+  font-size: 2rem;
+  transition: 0.2s;
+  line-height: 2rem;
+}
+.middle {
+  flex: 2;
+  font-family: "Public Sans";
+}
+.middle > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.middle > ul > li > a {
+  color: white;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 1.5rem;
+}
+.middle > ul > li > a:hover {
+  color: #66ff33;
+}
+.middle > ul > li {
+  margin-right: 1rem;
+}
+.name {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 25vh;
+  height: 65vh;
+  color: white;
+  font-family: "Montserrat";
+  opacity: 1;
+}
+.name > p {
+  margin-top: 3vh;
+  text-align: center;
+}
+.left:hover {
+  color: #66ff33;
+}
+.right {
+  flex: 2;
+}
+.aboutme {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url("header-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-wrap: wrap;
+}
+.myimg {
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+}
+.name > h2 > span {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.scrolldownemoji {
+  font-size: 3rem;
+}
+.techiknow {
+  display: grid;
+  background: url("techiknowbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Fira Code";
+  text-align: center;
+  color: white;
+}
+.techiknow > .programminglanguages {
+  width: 100%;
+}
+.techiknow > .hobbies {
+  width: 100%;
+}
+.techiknowheading,
+.programminglanguageheading,
+.hobbiesheading,
+.certificatesheading {
+  color: black;
+}
+.phonefire {
+  display: none;
+}
+.certificates {
+  font-family: "Fira Code";
+  background: url("certificatesigot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.github {
+  background: black;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.github > a {
+  color: white;
+  text-decoration: none;
+  font-size: 5rem;
+  font-family: "Fira Code";
+}
+.forms {
+  background-color: #191919;
+  color: white;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Fira code";
+}
+.form-label {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+textarea {
+  height: 35vh;
+  width: 100vw;
+}
+.submit {
+  background-color: white;
+  height: 2rem;
+  width: 25rem;
+  border-radius: 6px;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 10vh;
+  }
+  .name > p {
+    margin-top: 5vh;
+  }
+  .middle > ul > li {
+    margin-right: 0.5rem;
+  }
+  .middle > ul > li > a {
+    font-size: 1rem;
+  }
+  .left {
+    font-size: 0.99rem;
+    line-height: 1.2rem;
+  }
+  .right {
+    flex: 0;
+  }
+  .left {
+    flex: 0.5;
+  }
+  .name {
+    margin-top: 10vh;
+  }
+  .name > h2 > span {
+    font-size: 3rem;
+  }
+  .name > h2 {
+    font-size: 1.5rem;
+  }
+  .name > h1 {
+    font-size: 2rem;
+  }
+  .fireemoji {
+    display: none;
+  }
+  .left {
+    display: none;
+  }
+  .aboutme > h2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+  }
+  .techiknow {
+    grid-template-columns: 1fr;
+  }
+  .techiknow > .programminglanguages {
+    width: 100%;
+  }
+  .techiknow > .hobbies {
+    width: 100%;
+  }
+  .phonefire {
+    display: block;
+  }
+  .github > a {
+    font-size: 2rem;
+  }
+}
